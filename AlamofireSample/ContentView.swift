@@ -14,8 +14,8 @@ struct ContentView: View {
     var body: some View {
         
         HStack{
-                 CategoryListScreen()
-            //        AddCategoryScreen()
+//                 CategoryListScreen()
+                    AddCategoryScreen()
 //                    SupplierListScreen()
 //            ProductListScreen()
         }

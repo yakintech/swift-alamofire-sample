@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct ProductModel : Decodable{
+struct ProductModel : Codable{
     var name : String = ""
     var unitPrice = 0.0
     var unitsInStock = 0

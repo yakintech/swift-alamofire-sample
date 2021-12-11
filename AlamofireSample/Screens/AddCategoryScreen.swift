@@ -10,7 +10,9 @@ import SwiftUI
 struct AddCategoryScreen: View {
     
     @State var categoryModel = CategoryModel()
-    var categoryRepository = CategoryRepository()
+//    var categoryRepository = CategoryRepository()
+    
+    var categoryRepository = GenericRepository<CategoryModel>();
     
     
     var body: some View {
@@ -22,7 +24,7 @@ struct AddCategoryScreen: View {
                 
                 Button("Add"){
                     
-                    categoryRepository.Add(categoryModel: categoryModel ){res in
+                    categoryRepository.Add(url:"/categories",  newModel: categoryModel ){res in
 
                     }
                     
